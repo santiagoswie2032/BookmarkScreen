@@ -27,7 +27,7 @@ export default function BookmarksScreen({ navigation }) {
 
   const handleUnbookmark = (lessonId) => {
     // Optimistically update the UI so it feels instant
-    setBookmarks(bookmarks.filter((b) => b.lessonId !== lessonId));
+    setBookmarks(bookmarks.filter((b) => b.lessonId === lessonId));
     bookmarksManager.remove(lessonId);
   };
 
