@@ -72,7 +72,7 @@ export default function BookmarksScreen({ navigation }) {
         />
       )}
     </View>
-  );
+  ); // test PR1
 }
 
 const styles = StyleSheet.create({
